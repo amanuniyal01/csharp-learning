@@ -12,3 +12,8 @@ Console.WriteLine($"Addition of {a} and {b} is : {c}");
 int max = int.MaxValue;
 int min = int.MinValue;
 Console.WriteLine($"The range of integers is {min} to {max}");
+
+int what = max + 3; //Overflow Wrapping
+int what2 = min - 3; //Underflow Wrapping
+Console.WriteLine($"An example of overflow: {what}");
+Console.WriteLine($"An example of overflow: {what2}");
