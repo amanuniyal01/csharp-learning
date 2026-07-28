@@ -21,11 +21,14 @@ int what2 = min - 3; //Underflow Wrapping
 Console.WriteLine($"An example of overflow: {what}");
 Console.WriteLine($"An example of overflow: {what2}");
 
-
-
 // Double type
 double a = 19;
 double b = 23;
 double c = 8;
 double d = (a + b) / c;
 Console.WriteLine(d);
+
+// DECIMAL => Precise than double.
+decimal x = 1.0M; //M is to tell the compiler that its of decimal type otherwise by default it will treat as double
+decimal y = 3.0M;
+Console.WriteLine(x / y);
