@@ -26,3 +26,17 @@ for (int i = 1; i < 21; i++)
 
 }
 Console.WriteLine($"Sum is {sum}");
+
+// Reverse a integer
+int original = 12345;
+int temp = original;
+int reverse = 0;
+
+while (temp > 0)
+{
+    int rem = temp % 10;
+    reverse = reverse * 10 + rem;
+    temp = temp / 10;
+}
+
+Console.WriteLine($"Reverse of {original} is {reverse}");
